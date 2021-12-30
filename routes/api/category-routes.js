@@ -7,8 +7,8 @@ router.get("/", async (req, res) => {
   // find all categories
   // be sure to include its associated Products\\
   try {
-    const categoryapiData = await Category.findAll();
-    res.status(200).json(categoryapiData);
+    const categoryData = await Category.findAll();
+    res.status(200).json(categoryData);
   } catch (error) {
     res.status(400).json(err);
   }
@@ -20,6 +20,8 @@ router.get("/:id", async (req, res) => {
 
   Category.findByPk(req.params.id).then((bookData) => {
     res.json(bookData);
+    console.log(bookData)
+
   });
 });
 
