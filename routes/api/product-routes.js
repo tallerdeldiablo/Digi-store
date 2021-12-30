@@ -21,9 +21,27 @@ try {
 });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async  (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+
+  
+  try {
+    const productData = await Product.findByPk(req.params.id,{
+
+      include:[{model: Category}, {model:Tag}],
+    });
+   console.log("include product-model"+productData)
+    res.status(200).json(productData);
+  } catch (error) {
+    res.status(500).json(error);
+    
+  } // Category.findByPk(req.params.id).then((bookData) => {
+  //   res.json(bookData);
+  //   console.log(bookData)
+
+  // });
+
 });
 
 // create new product
