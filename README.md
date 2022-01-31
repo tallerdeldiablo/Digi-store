@@ -21,9 +21,8 @@ Digi-store is an e-commerce back-end application where you can add products, tag
 
 Use insomnia after installing dependencies and seeding the db.
 
-    ```md
-    ![alt text]![image](https://user-images.githubusercontent.com/57916204/151874193-e68badbc-fc46-4156-8d09-632ec164c787.png)
-    ```
+  ![screenshot]![image](https://user-images.githubusercontent.com/57916204/151874193-e68badbc-fc46-4156-8d09-632ec164c787.png)
+ 
 
 
 ## License
