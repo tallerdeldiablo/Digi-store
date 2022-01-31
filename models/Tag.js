@@ -16,6 +16,7 @@ Tag.init(
     },
     tag_name: {
       type: DataTypes.STRING,
+      allowNull: false
     },
     // reader_id: {
     //   type: DataTypes.INTEGER,
