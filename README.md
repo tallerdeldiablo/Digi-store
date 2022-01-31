@@ -12,10 +12,9 @@ Digi-store is an e-commerce back-end application where you can add products, tag
 
 
 ## Installation
-    ```md
-   npm i
-   npm run seed
-    ```
+    ```npm i
+  
+    ``` npm run seed
 
 
 ## Usage
